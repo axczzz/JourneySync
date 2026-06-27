@@ -1,0 +1,72 @@
+{
+  "name": "UserSettings",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "voice": {
+      "type": "string",
+      "default": "Google UK English Female"
+    },
+    "alarm_sound": {
+      "type": "string",
+      "default": "Digital Beep"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "light"
+    },
+    "walking_speed_mph": {
+      "type": "number",
+      "default": 3.0
+    },
+    "has_smartwatch": {
+      "type": "boolean",
+      "default": false
+    },
+    "smartwatch_type": {
+      "type": "string"
+    },
+    "premium": {
+      "type": "boolean",
+      "default": false
+    },
+    "premium_plan": {
+      "type": "string",
+      "enum": [
+        "none",
+        "monthly",
+        "annual"
+      ],
+      "default": "none"
+    },
+    "notifications_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "saved_location": {
+      "type": "string"
+    },
+    "saved_location_label": {
+      "type": "string"
+    },
+    "saved_card_last4": {
+      "type": "string"
+    },
+    "saved_card_expiry": {
+      "type": "string"
+    },
+    "saved_card_name": {
+      "type": "string"
+    },
+    "saved_card_type": {
+      "type": "string"
+    }
+  },
+  "required": []
+}
